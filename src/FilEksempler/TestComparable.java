@@ -1,6 +1,6 @@
 package FilEksempler;
 
-import java.util.Comparator;
+import java.util.*;
 
 public class TestComparable {
 
@@ -15,5 +15,19 @@ public class TestComparable {
             System.out.println("The area of the larger object is " + g2.getArea());
         else
             System.out.println("Same area  " + g1.getArea());
+
+
+
+        ArrayList<GeometricObject> tabel = new ArrayList<>();
+        tabel.add(g1);
+        tabel.add(g2);
+        tabel.add(g3);
+
+        Collections.sort(tabel);
+
     }
+
+
+
+
 }
