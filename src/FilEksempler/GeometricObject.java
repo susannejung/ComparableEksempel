@@ -1,6 +1,8 @@
 package FilEksempler;
 
-public abstract class GeometricObject  {
+import java.util.Comparator;
+
+public abstract class GeometricObject implements Comparable<GeometricObject> {
     private String color = "white";
     private boolean filled;
     private java.util.Date dateCreated;

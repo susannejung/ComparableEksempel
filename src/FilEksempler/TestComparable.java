@@ -17,17 +17,20 @@ public class TestComparable {
             System.out.println("Same area  " + g1.getArea());
 
 
-
         ArrayList<GeometricObject> tabel = new ArrayList<>();
         tabel.add(g1);
         tabel.add(g2);
         tabel.add(g3);
 
+
         Collections.sort(tabel);
 
+
+        for(GeometricObject i:tabel) {
+            System.out.print(i);
+            System.out.println("  "+i.getArea());
+        }
+
+
     }
-
-
-
-
 }

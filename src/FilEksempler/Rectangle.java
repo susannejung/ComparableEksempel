@@ -1,6 +1,6 @@
 package FilEksempler;
 
-public class Rectangle extends GeometricObject implements Comparable<GeometricObject> {
+    public class Rectangle extends GeometricObject{
     private double width;
     private double height;
 
@@ -10,6 +10,14 @@ public class Rectangle extends GeometricObject implements Comparable<GeometricOb
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
     }
 
     /** Return width */

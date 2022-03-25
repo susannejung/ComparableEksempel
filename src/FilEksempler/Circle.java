@@ -1,10 +1,16 @@
 package FilEksempler;
 
-
-public class Circle extends GeometricObject implements Comparable<GeometricObject> {
+public class Circle extends GeometricObject{
     private double radius;
 
     public Circle() {
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
     }
 
     public Circle(double radius) {
